@@ -34,7 +34,7 @@ const barrels: string[] = [
 
 const cliSystemConfigPackages: any = {};
 barrels.forEach((barrelName: string) => {
-  cliSystemConfigPackages[barrelName] = { main: 'index' };
+  cliSystemConfigPackages[barrelName] = { main: 'index', defaultExtension: 'js' };
 });
 
 /** Type declaration for ambient System. */
