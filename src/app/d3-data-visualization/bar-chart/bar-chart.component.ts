@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './bar-chart.component.html'
 })
 export class BarChartComponent {
+    constructor() { }
 }

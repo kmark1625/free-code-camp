@@ -4,6 +4,8 @@ import { QuoteMachineComponent } from
     './intermediate-front-end/quote-machine/quote-machine.component';
 import { LocalWeatherComponent } from
     './intermediate-front-end/local-weather/local-weather.component';
+import { WikipediaViewerComponent } from
+    './intermediate-front-end/wikipedia-viewer/wikipedia-viewer.component';
 import { BarChartComponent } from
     './d3-data-visualization/bar-chart/bar-chart.component';
 
@@ -12,6 +14,7 @@ export const routes: RouterConfig = [
     { path: '', component: ProjectListComponent },
     { path: 'quote-machine', component: QuoteMachineComponent },
     { path: 'local-weather', component: LocalWeatherComponent },
+    { path: 'wikipedia-viewer', component: WikipediaViewerComponent },
     { path: 'bar-chart', component: BarChartComponent }
 ];
 
