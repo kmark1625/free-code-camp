@@ -20,8 +20,6 @@ export class WikipediaViewerComponent implements OnInit {
     search() {
         this.wikipediaViewerService.searchWikipedia(this.searchTerm)
             .subscribe( response => {
-                console.log('response:');
-                console.log(response);
                 this.searchResults = response;
             });
     }

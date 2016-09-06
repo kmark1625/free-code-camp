@@ -1,0 +1,16 @@
+<h1>Twitch TV</h1>
+<ul *ngFor='let streamer of streamers'>
+    <li>
+        <div>
+            <p><a href='{{"http://www.twitch.tv/" + streamer.channelName}}'>{{streamer.channelName}}</a></p>
+            <p *ngIf='streamer.stream'>{{streamer.stream.channel.status}}</p>
+            <p *ngIf='streamer.status === 404 || streamer.status === 422'>
+                Account Closed
+            </p>
+            <p *ngIf='streamer.stream === null'>
+                Offline
+            </p> 
+        </div>
+    </li>
+
+</ul>
