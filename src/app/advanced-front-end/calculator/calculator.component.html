@@ -1,0 +1,10 @@
+<h1>Electronic Calculator</h1>
+<div>
+    <div class='display'>
+        <p>Display: {{display}}</p>
+        <p>Total: {{total}}</p>
+    </div>
+    <div class='buttons' *ngFor='let button of buttons'>
+        <button class='btn' (click)='button.method(reference, button.value)'>{{button.name}}</button>
+    </div>
+</div>
