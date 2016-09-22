@@ -10,6 +10,8 @@ import { TwitchTvComponent } from
     './intermediate-front-end/twitch-tv/twitch-tv.component';
 import { CalculatorComponent } from
     './advanced-front-end/calculator/calculator.component';
+import { PomodoroComponent } from
+    './advanced-front-end/pomodoro/pomodoro.component';
 import { BarChartComponent } from
     './d3-data-visualization/bar-chart/bar-chart.component';
 
@@ -21,6 +23,7 @@ export const routes: RouterConfig = [
     { path: 'wikipedia-viewer', component: WikipediaViewerComponent },
     { path: 'twitch-tv', component: TwitchTvComponent },
     { path: 'calculator', component: CalculatorComponent },
+    { path: 'pomodoro', component: PomodoroComponent },
     { path: 'bar-chart', component: BarChartComponent }
 ];
 
