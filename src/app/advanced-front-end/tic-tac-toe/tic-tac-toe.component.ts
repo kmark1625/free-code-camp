@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { TicTacToeService } from './tic-tac-toe.service';
 
+export class Player {
+    public marker: string;
+
+    constructor(marker) {
+        this.marker = marker;
+    }
+}
+
 @Component({
     moduleId: module.id,
     templateUrl: './tic-tac-toe.component.html',
@@ -9,6 +17,7 @@ import { TicTacToeService } from './tic-tac-toe.service';
     pipes: []
 })
 export class TicTacToeComponent implements OnInit {
+    public board = [new Array(3), new Array(3), new Array(3)];
 
     constructor(private ticTacToeService: TicTacToeService) {
 
@@ -16,5 +25,9 @@ export class TicTacToeComponent implements OnInit {
 
     ngOnInit() {
 
+    }
+
+    makeMove(row, column, player) {
+        this.board[row][column] = player.marker;
     }
 }
