@@ -1,5 +1,17 @@
 <h1>Pomodoro</h1>
 <div class="clock" (click)="handleTimer()">
-    <p>Session</p>
+    <p>{{mode}}</p>
     <p>{{timeRemaining | time}} seconds</p>
+</div>
+<div>
+    <span>
+        <p>Session Length: {{ sessionLength }}</p>
+        <button (click)="adjust('session', 1)">+</button>
+        <button (click)="adjust('session', -1)">-</button>
+    </span>
+    <span>
+    <p>Break Length: {{ breakLength }}</p>
+        <button (click)="adjust('break', 1)">+</button>
+        <button (click)="adjust('break', -1)">-</button>
+    </span>
 </div>
