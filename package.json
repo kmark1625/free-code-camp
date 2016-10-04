@@ -21,8 +21,9 @@
     "@angular/platform-browser": "^2.0.0-rc.5",
     "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
     "angular2-react": "0.0.1",
-    "d3": "^4.2.2",
+    "d3": "^4.2.6",
     "es6-shim": "^0.35.0",
+    "moment": "^2.15.1",
     "reflect-metadata": "0.1.8",
     "rxjs": "5.0.0-beta.6",
     "systemjs": "0.19.31",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.32",
+    "@types/d3": "^3.5.36",
     "angular-cli": "0.0.*",
     "clang-format": "^1.0.35",
     "codelyzer": "0.0.14",
