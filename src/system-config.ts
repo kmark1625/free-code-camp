@@ -3,10 +3,12 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'd3': 'vendor/d3'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'd3': { format: 'cjs', defaultExtension: 'js', main: 'd3'}
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
